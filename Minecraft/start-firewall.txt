@@ -1,0 +1,16 @@
+First disable old firewall
+
+sudo ufw disable
+
+sudo apt install firewalld
+
+sudo systemctl enable firewalld
+
+sudo systemctl start firewalld
+
+sudo firewall-cmd state
+
+sudo firewall-cmd --permanent --zone=public --add-port=25565/tcp
+
+sudo firewall-cmd --reload
+
